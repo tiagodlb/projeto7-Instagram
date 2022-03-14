@@ -65,6 +65,11 @@ body {
   color: #979797;
   text-align: center;
 }
+.navbar .pesquisa input:focus {
+  width: 430px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
 
 .navbar .icones ion-icon {
   margin: 0 5px;

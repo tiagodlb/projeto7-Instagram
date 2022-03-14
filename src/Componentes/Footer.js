@@ -1,15 +1,17 @@
 export default function Footer() {
     return (
         <div className="fundo-mobile">
-            <ion-icon name="home"></ion-icon>
-            <ion-icon name="search-outline"></ion-icon>
-            <ion-icon name="add-circle-outline"></ion-icon>
-            <ion-icon name="heart-outline"></ion-icon>
-            <ion-icon name="person-outline"></ion-icon>
+            <ConteudoFooter icone="home" />
+            <ConteudoFooter icone="search-outline" />
+            <ConteudoFooter icone="add-circle-outline" />
+            <ConteudoFooter icone="heart-outline" />
+            <ConteudoFooter icone="person-outline" />
         </div>
     )
 }
 
 function ConteudoFooter(props) {
-
+    return(
+        <ion-icon name={props.icone}></ion-icon>
+    )
 }

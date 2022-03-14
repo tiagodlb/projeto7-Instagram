@@ -1,41 +1,46 @@
-export default function Navbar(){
-    return(
+export default function Navbar() {
+    return (
 
         <div className="navbar">
-        <div className="container">
-          <div className="logo">
-            <ion-icon name="logo-instagram"></ion-icon>
-            <div className="separador"></div>
-            <img src="assets/img/logo.png" />
-          </div>
+            <div className="container">
+                <div className="logo">
+                    <ConteudoNavbar icone="logo-instagram" />
+                    <div className="separador"></div>
+                    <ConteudoNavbar imagem="assets/img/logo.png" />
+                </div>
 
-          <div className="logo-mobile">
-            <ion-icon name="logo-instagram"></ion-icon>
-          </div>
+                <div className="logo-mobile">
+                    <ConteudoNavbar icone="logo-instagram" />
+                </div>
 
-          <div className="instagram-mobile">
-            <img src="assets/img/logo.png" />
-          </div>
-  
-          <div className="pesquisa">
-            <input type="text" placeholder="Pesquisar" />
-          </div>
-  
-          <div className="icones">
-            <ion-icon name="paper-plane-outline"></ion-icon>
-            <ion-icon name="compass-outline"></ion-icon>
-            <ion-icon name="heart-outline"></ion-icon>
-            <ion-icon name="person-outline"></ion-icon>
-          </div>
+                <div className="instagram-mobile">
+                    <ConteudoNavbar imagem="assets/img/logo.png" />
+                </div>
 
-          <div className="icones-mobile">
-            <ion-icon name="paper-plane-outline"></ion-icon>
-          </div>
-        </div>
-      </div>)
+                <div className="pesquisa">
+                    <input type="text" placeholder="Pesquisar" />
+                </div>
+
+                <div className="icones">
+                    <ConteudoNavbar icone="paper-plane-outline" />
+                    <ConteudoNavbar icone="compass-outline" />
+                    <ConteudoNavbar icone="heart-outline" />
+                    <ConteudoNavbar icone="person-outline" />
+                </div>
+
+                <div className="icones-mobile">
+                    <ConteudoNavbar icone ="paper-plane-outline" />
+                </div>
+            </div>
+        </div>)
 
 }
 
-function ConteudoNavbar(props){
-
+function ConteudoNavbar(props) {
+    return (
+        <div>
+            <img src={props.imagem} />
+            <ion-icon name={props.icone}></ion-icon>
+        </div>
+    )
 }
