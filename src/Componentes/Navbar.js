@@ -1,7 +1,7 @@
 export default function Navbar() {
     return (
 
-        <div className="navbar">
+        <header className="navbar">
             <div className="container">
                 <div className="logo">
                     <ConteudoNavbar icone="logo-instagram" />
@@ -32,7 +32,7 @@ export default function Navbar() {
                     <ConteudoNavbar icone ="paper-plane-outline" />
                 </div>
             </div>
-        </div>)
+        </header>)
 
 }
 

@@ -1,7 +1,7 @@
 export default function Posts(props) {
     const { imagemPost, usuarioPost, iconeAcoes, imagemConteudoPost, iconeLike, iconeComentar, iconeEnviar, iconeSalvar, imagemQuemCurtiu, usuarioCurtiu } = props
     return (
-        <div class="post">
+        <section class="post">
             <div class="topo">
                 <div class="usuario">
                     <img src={imagemPost} />
@@ -35,6 +35,6 @@ export default function Posts(props) {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

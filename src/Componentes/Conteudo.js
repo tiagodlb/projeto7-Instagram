@@ -79,26 +79,26 @@ const ConteudoSideBar = [{
 
 export default function Corpo() {
     return (
-        <div class="corpo">
+        <main class="corpo">
             <div class="esquerda">
-                <div class="stories">
+                <article class="stories">
                     {ConteudoStories.map((c) => (
                         <Stories nomeUsuario={c.nomeUsuario} imagemStories={c.imagemStories} />
                     ))}
                     <div class="setinha">
                         <ion-icon name="chevron-forward-circle"></ion-icon>
                     </div>
-                </div>
-                <div class="posts">
+                </article>
+                <article class="posts">
                     {ConteudoPosts.map((c) => (
                         <Posts imagemPost={c.imagemPost} usuarioPost={c.usuarioPost} iconeAcoes={c.iconeAcoes} imagemConteudoPost={c.imagemConteudoPost}
                             iconeLike={c.iconeLike} iconeComentar={c.iconeComentar} iconeEnviar={c.iconeEnviar} iconeSalvar={c.iconeSalvar} imagemQuemCurtiu={c.imagemQuemCurtiu}
                             usuarioCurtiu={c.usuarioCurtiu} />
                     ))}
-                </div>
+                </article>
 
             </div>
-            <div class="sidebar">
+            <article class="sidebar">
 
                 {ConteudoSideBar.map((c) => (
                     <Sidebar imagemUsuarioSidebar={c.imagemUsuarioSidebar} nomeUsuarioSidebar={c.nomeUsuarioSidebar} primeiroNomeUsuarioSidebar={c.primeiroNomeUsuarioSidebar}
@@ -106,7 +106,7 @@ export default function Corpo() {
                     razao2 = {c.razao2} iconeSugestao3 = {c.iconeSugestao3} nome3Sugestoes = {c.nome3Sugestoes} razao3 = {c.razao3} iconeSugestao4 = {c.iconeSugestao4}
                     nome4sugestoes = {c.nome4sugestoes} razao4 = {c.razao4} iconeSugestao5 = {c.iconeSugestao5} nome5Sugestoes = {c.nome5Sugestoes} razao5 = {c.razao5}/>
                 ))}
-            </div>
-        </div>
+            </article>
+        </main>
     )
 }

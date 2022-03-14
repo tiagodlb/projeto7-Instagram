@@ -4,7 +4,7 @@ export default function Sidebar(props) {
         nome1Sugestoes, razao1, iconeSugestao2, nome2Sugestoes, razao2, iconeSugestao3, nome3Sugestoes,
         razao3, iconeSugestao4, nome4sugestoes, razao4, iconeSugestao5, nome5Sugestoes, razao5 } = props
     return (
-        <div class="sidebar">
+        <section class="sidebar">
             <div class="usuario">
                 <img src={imagemUsuarioSidebar} />
                 <div class="texto">
@@ -87,6 +87,6 @@ export default function Sidebar(props) {
             <div class="copyright">
                 © 2021 INSTAGRAM DO FACEBOOK
             </div>
-        </div>
+        </section>
     )
 }
